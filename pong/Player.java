@@ -1,3 +1,13 @@
+//Programmer's name:  William Murmann
+//Email address:      wmurmann@gmail.com
+//Course:             CPSC223j
+//Assignment number:  assignment 6
+//Due date:           2013-dec-11
+
+//Project: A project made to simulate the original pong game.
+
+//This module difines the paddle class called player. 
+
 package pong;
 
 import java.awt.Color;

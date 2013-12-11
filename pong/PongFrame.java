@@ -48,7 +48,8 @@ public class PongFrame extends JFrame
     int leftScore = 0;
     int rightScore = 0;
     boolean gameOver = false;
-    
+
+    private pongApp myapplet;
     //objects
     public ball b;
     public Player left,right;
@@ -68,6 +69,7 @@ public class PongFrame extends JFrame
     
     public PongFrame(pongApp mainapp)
     {
+        myapplet = mainapp;
         grid = new GridBagLayout();
         global = new FlowLayout(FlowLayout.CENTER,0,0);
         setLayout(global);
@@ -237,7 +239,7 @@ public class PongFrame extends JFrame
             }
             else if(event.getSource() == exit)
             {
-                System.exit(0);
+                 myapplet.close();
             }
         }
         
@@ -301,7 +303,7 @@ public class PongFrame extends JFrame
             {
                 angle = 180 - angle;
             }
-            else if(b.x >= 540)
+            else if(b.x >= 555)
             {
                  if(rightScore == 10)
                 {
@@ -328,7 +330,7 @@ public class PongFrame extends JFrame
             }
             else if(b.x <= 25)
             {
-                if(rightScore == 9)
+                if(rightScore == 4)
                 {
                     leftScore = 0;
                     rightScore = 0;
@@ -336,7 +338,7 @@ public class PongFrame extends JFrame
                     winnerField.setText("Right Player");
                     gameOver = true;
                 }
-                else if(leftScore == 9)
+                else if(leftScore == 4)
                 {
                     leftScore = 0;
                     rightScore = 0;

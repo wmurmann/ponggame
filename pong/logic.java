@@ -1,3 +1,11 @@
+//Programmer's name:  William Murmann
+//Email address:      wmurmann@gmail.com
+//Course:             CPSC223j
+//Assignment number:  assignment 6
+//Due date:           2013-dec-11
+
+//Project: A project made to simulate the original pong game.
+//This defines the the logic module which handles the getting angles and speed for the ball class.
 package pong;
 
 import java.util.Random;
